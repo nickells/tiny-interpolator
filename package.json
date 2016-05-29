@@ -1,0 +1,28 @@
+{
+  "name": "tiny-interpolator",
+  "version": "1.0.0",
+  "description": "For quick HTML templating",
+  "main": "tiny-interpolator.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickells/tiny-interpolator.git"
+  },
+  "keywords": [
+    "tiny",
+    "interpolator",
+    "html",
+    "template",
+    "static",
+    "regex",
+    "curly braces"
+  ],
+  "author": "Nick Ellsworth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickells/tiny-interpolator/issues"
+  },
+  "homepage": "https://github.com/nickells/tiny-interpolator#readme"
+}
