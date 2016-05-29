@@ -8,7 +8,7 @@ var Interpolation  = function (renderTarget, data, templateString){
   return this.fillTemplate();
 }
 
-Interpolation.prototype.getNestedValue = function(string,context){
+Interpolation.prototype.getNestedValue = function(string, context){
   var values = string.split('.');
   return values.reduce(function(current,next){
     return current[next];
