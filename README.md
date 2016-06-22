@@ -48,3 +48,6 @@ BlogPosts.renderAt('blog')
 ![preview](http://i.imgur.com/YO21eUt.png)
 ---
 ![code](http://i.imgur.com/TIV0Lrb.png)
+
+#####Other notes:
+If you wanted to use this without immediately rendering, it will work fine. You can grab the outputted text for your needs with the exposed `.output` property on the `Interpolation`
