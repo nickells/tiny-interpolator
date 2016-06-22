@@ -1,4 +1,6 @@
 # tiny-interpolator
+[![npm version](https://badge.fury.io/js/tiny-interpolator.svg)](https://badge.fury.io/js/tiny-interpolator)
+
 ###Usage:
 #####0. Include script in HTML
 ```html
