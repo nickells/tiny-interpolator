@@ -4,7 +4,7 @@
   "description": "For quick HTML templating",
   "main": "tiny-interpolator.js",
   "scripts": {
-    "test": ""
+    "test": "open test/index.html"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,9 @@
   "bugs": {
     "url": "https://github.com/nickells/tiny-interpolator/issues"
   },
-  "homepage": "https://github.com/nickells/tiny-interpolator#readme"
+  "homepage": "https://github.com/nickells/tiny-interpolator#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
 }

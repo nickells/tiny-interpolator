@@ -26,7 +26,7 @@ Interpolation.prototype.fillTemplate = function(){
     }.bind(this));
   }.bind(this), '')
   this.renderTarget.innerHTML = this.output;
-  return this.renderTarget;
+  return this.output;
 }
 
 Interpolation.prototype.stripBrackets = function(str){
