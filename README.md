@@ -38,9 +38,10 @@ let data = [
   }
 ]
 ```
-#####4: Create new `Interpolation` to fill a DOM element with your content.
+#####4: Create new `Interpolation` and render at your target.
 ```js
-let BlogPosts = new Interpolation('blog', data, template);
+let BlogPosts = new Interpolation(data, template);
+BlogPosts.renderAt('blog')
 ```
 
 #####Observe!

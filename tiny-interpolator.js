@@ -1,11 +1,10 @@
 'use strict';
-var Interpolation  = function (renderTarget, data, templateString){
+var Interpolation  = function (data, templateString){
   this.data = data;
   this.templateString = templateString;
   this.output = '';
-  this.renderTarget = document.getElementById(renderTarget);
-  if (this.renderTarget === null) throw new Error('tiny-interpolator: Render target was not found. Make sure a DOM element exists with id "' +  renderTarget + '".')
-  return this.fillTemplate();
+  this.fillTemplate();
+  return this.output;
 }
 
 Interpolation.prototype.getNestedValue = function(string, context){
@@ -25,10 +24,14 @@ Interpolation.prototype.fillTemplate = function(){
       return datum[key]
     }.bind(this));
   }.bind(this), '')
-  this.renderTarget.innerHTML = this.output;
-  return this.output;
 }
 
 Interpolation.prototype.stripBrackets = function(str){
   return str.substring(2, str.length-2)
+}
+
+Interpolation.prototype.renderAt = function(renderTarget){
+  this.renderTarget = document.getElementById(renderTarget)
+  if (this.renderTarget === null) throw new Error('tiny-interpolator: Render target was not found. Make sure a DOM element exists with id "' +  renderTarget + '".')
+  this.renderTarget.innerHTML = this.output;
 }

@@ -33,7 +33,8 @@ describe('Interpolation', function() {
       }
     ];
 
-    BlogPosts = new Interpolation('blog', data, template);
+    BlogPosts = new Interpolation(data, template);
+    BlogPosts.renderAt('blog');
   })
 
   describe('constructor', function () {
@@ -41,9 +42,6 @@ describe('Interpolation', function() {
       expect(BlogPosts.data).to.equal(data)
       expect(BlogPosts.templateString).to.equal(template)
     });
-    it('should throw an error if the render target is not found', function() {
-      expect(()=>new Interpolation('blarg', data, template)).to.throw(Error)
-    })
   });
   describe('getNestedValue', function() {
     it('should return an object value from a nested property name', function() {
@@ -61,6 +59,14 @@ describe('Interpolation', function() {
       expect(BlogPosts.output).to.equal(
         `<div class="post">\n      <h1>My first blog post</h1>\n      <h3>CoolGuy Jefferson</h3>\n      <p>Wow, I sure love writing blogs. What a neat new idea.</p>\n    </div><div class="post">\n      <h1>My second blog post</h1>\n      <h3>Jared Ganglyfingers</h3>\n      <p>This website is just okay, in my opinion. It could use a comments section</p>\n    </div>`)
     })
+  })
+  describe('render function', function(){
+    it('should set the renderTarget property to the DOM element', function(){
+      expect(BlogPosts.renderTarget).to.equal(document.getElementById('blog'))
+    })
+    it('should throw an error if the render target is not found', function() {
+      expect(()=>new Interpolation('blarg', data, template).render()).to.throw(Error)
+    })
     it('should put the output in the renderTarget', function(){
       expect(BlogPosts.renderTarget.innerHTML).to.equal(BlogPosts.output)
     })
@@ -72,3 +78,4 @@ describe('Interpolation', function() {
     })
   })
 });
+
