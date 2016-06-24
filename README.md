@@ -1,6 +1,12 @@
 # tiny-interpolator
 [![npm version](https://badge.fury.io/js/tiny-interpolator.svg)](https://badge.fury.io/js/tiny-interpolator)
 
+###About:
+A tiny, simple, template engine.
+
+Less than 1Kb! No dependencies! *Wow!*
+
+
 ###Usage:
 #####0. Include script in HTML
 ```html
