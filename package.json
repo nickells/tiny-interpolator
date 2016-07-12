@@ -1,6 +1,6 @@
 {
   "name": "tiny-interpolator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "For quick HTML templating",
   "main": "tiny-interpolator.js",
   "scripts": {
@@ -17,7 +17,9 @@
     "template",
     "static",
     "regex",
-    "curly braces"
+    "curly braces",
+    "client",
+    "server"
   ],
   "author": "Nick Ellsworth",
   "license": "ISC",

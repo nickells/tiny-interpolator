@@ -35,3 +35,7 @@ Interpolation.prototype.renderAt = function(renderTarget){
   if (this.renderTarget === null) throw new Error('tiny-interpolator: Render target was not found. Make sure a DOM element exists with id "' +  renderTarget + '".')
   this.renderTarget.innerHTML = this.output;
 }
+
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined'){
+  module.exports = Interpolation;
+}
