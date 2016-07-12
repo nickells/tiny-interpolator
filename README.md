@@ -59,5 +59,5 @@ BlogPosts.renderAt('blog')
 
 ###Other notes:
 * If you wanted to use this without immediately rendering, it will work fine. You can grab the outputted text for your needs with the exposed `.output` property on the `Interpolation`.
-* As of `1.0.3` you can `require('tiny-interpolator')` inside Node if you desire.
+* As of `1.1.0` you can `require('tiny-interpolator')` inside Node if you desire.
 * Run tests with `npm test`.
