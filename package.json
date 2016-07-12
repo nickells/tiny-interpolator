@@ -1,6 +1,6 @@
 {
   "name": "tiny-interpolator",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "For quick HTML templating",
   "main": "tiny-interpolator.js",
   "scripts": {
